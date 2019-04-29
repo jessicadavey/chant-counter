@@ -5,7 +5,7 @@ html {
 }
 
 .controls {
-  width: 50%;
+  width: 80%;
   margin: 100px auto 20px auto;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,14 @@ html {
 }
 
 .undo {
+  border: none;
+  background: #c4c4c4;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.reset {
   border: none;
   background: #c4c4c4;
   font-size: 24px;
