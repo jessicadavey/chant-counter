@@ -17,11 +17,13 @@ counter.addEventListener("click", handleIncrement);
 undo.addEventListener("click", handleUndo);
 reset.addEventListener("click", handleReset);
 
-function handleIncrement() {
+function handleIncrement(e) {
+  console.log(e);
   if (count >= 16) return;
   count++;
   localStorage.setItem("count", count);
   counter.textContent = count;
+  e.preventDefault();
 }
 
 function handleUndo() {
