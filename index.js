@@ -1,8 +1,16 @@
 const counter = document.querySelector(".counter");
 const undo = document.querySelector(".undo");
 const reset = document.querySelector(".reset");
+let count;
 
-let count = localStorage.getItem("count") || 0;
+const today = new Date().getDate().toString();
+
+const lastTime = localStorage.getItem("today");
+
+if (lastTime && today !== lastTime) handleReset();
+localStorage.setItem("today", today);
+
+count = localStorage.getItem("count") || 0;
 counter.textContent = count;
 
 counter.addEventListener("click", handleIncrement);
