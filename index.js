@@ -2,6 +2,7 @@ const counter = document.querySelector(".counter");
 const undo = document.querySelector(".undo");
 const reset = document.querySelector(".reset");
 let count;
+let dailyRounds = 16;
 
 const today = new Date().getDate().toString();
 
@@ -18,8 +19,7 @@ undo.addEventListener("click", handleUndo);
 reset.addEventListener("click", handleReset);
 
 function handleIncrement(e) {
-  console.log(e);
-  if (count >= 16) return;
+  if (count >= dailyRounds) return;
   count++;
   localStorage.setItem("count", count);
   counter.textContent = count;
