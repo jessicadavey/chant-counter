@@ -26,15 +26,17 @@ function handleIncrement(e) {
   e.preventDefault();
 }
 
-function handleUndo() {
+function handleUndo(e) {
   if (count <= 0) return;
   count--;
   localStorage.setItem("count", count);
   counter.textContent = count;
+  e.preventDefault();
 }
 
-function handleReset() {
+function handleReset(e) {
   count = 0;
   localStorage.setItem("count", count);
   counter.textContent = count;
+  e.preventDefault();
 }
