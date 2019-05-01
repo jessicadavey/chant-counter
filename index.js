@@ -8,7 +8,8 @@ const today = new Date().getDate().toString();
 
 const lastTime = localStorage.getItem("today");
 
-if (lastTime && today !== lastTime) handleReset();
+if (lastTime && today !== lastTime) doReset();
+
 localStorage.setItem("today", today);
 
 count = localStorage.getItem("count") || 0;
@@ -34,9 +35,13 @@ function handleUndo(e) {
   e.preventDefault();
 }
 
-function handleReset(e) {
+function doReset() {
   count = 0;
   localStorage.setItem("count", count);
   counter.textContent = count;
+}
+
+function handleReset(e) {
+  doReset();
   e.preventDefault();
 }
