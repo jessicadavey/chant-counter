@@ -31,6 +31,7 @@ main {
 
 .controls > span {
   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   padding: 5px;
   text-decoration: underline;
   color: #0b6e4f;
@@ -39,6 +40,6 @@ main {
 .mantra {
   font-size: 20px;
   width: 80%;
-  margin: 60px auto;
+  margin: 0px auto 30px auto;
   text-align: center;
 }
