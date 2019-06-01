@@ -1,6 +1,6 @@
 const counter = document.querySelector(".counter");
-const undo = document.querySelector(".undo");
-const reset = document.querySelector(".reset");
+const undo = document.querySelector("#undo");
+const reset = document.querySelector("#reset");
 let count;
 let dailyRounds = 16;
 
