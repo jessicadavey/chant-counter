@@ -1,4 +1,2 @@
-# chant-counter
-A counter for chanting rounds.
-
-Vanilla js, css, html
+# Chant Counter
+A simple counter for chanting mantra rounds on beads.  It uses LocalStorage to keep track of the number between page reloads, and automatically resets daily.
