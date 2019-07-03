@@ -1,5 +1,8 @@
 # Chant Counter
 
+![Chant Counter Screenshot](/chant-counter.png)
+
+
 A simple counter for chanting mantra rounds on beads. It uses LocalStorage to keep track of the number between page reloads, and automatically resets daily. This was created to solve a real-life problem that I encountered.
 
 
